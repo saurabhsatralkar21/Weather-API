@@ -4,7 +4,7 @@ const https = require("https");
 
 app.get("/", function(req, res){
 
-  const url = "https://api.openweathermap.org/data/2.5/weather?q=Ljubljana,slo&appid=930ffa8d23a8c516e10eeebcff59bc9d&units=metric";
+  const url = "https://api.openweathermap.org/data/2.5/weather?q=Ljubljana,slo&appid=ENTER_YOUR_API_KEY_HERE&units=metric";
 
   https.get(url, function(response) {
     console.log(response.statusCode);
